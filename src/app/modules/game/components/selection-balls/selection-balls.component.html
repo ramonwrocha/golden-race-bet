@@ -1,0 +1,11 @@
+<div fxLayout="row wrap">
+    <div fxFlex="20" fxFlex.sm="33.3" fxFlex.xs="50" style="padding: 1%;" *ngFor="let item of balls">
+        <mat-grid-list cols="1" rowHeight="1:1">
+            <app-ball (click)="onClickBall(item)" [ball]="item"></app-ball>
+        </mat-grid-list>
+    </div>    
+</div>
+
+<div fxLayout="column" fxLayoutAlign="center center">
+    <button color="primary" [disabled]="" (click)="clearSelection()" mat-raised-button>Clear selection</button>
+</div>

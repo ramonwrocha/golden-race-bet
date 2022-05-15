@@ -1,0 +1,128 @@
+{
+    "modules": [
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#6b5b95"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#feb236"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#d64501"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#ff7b25"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#b5e7a0"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#3e4444"
+        },
+        {
+            "title": "Game",
+            "icon": "https://goldenrace.com/images/logo.png",
+            "routePath": "game",
+            "backgroundColor": "#c94c4c"
+        }
+    ],
+    "balls": [
+        {
+            "backgroundColor": "#c94c4c",
+            "color": "white",
+            "number": 1,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#3e4444",
+            "color": "white",
+            "number": 2,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#b5e7a0",
+            "color": "white",
+            "number": 3,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#ff7b25",
+            "color": "white",
+            "number": 4,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#d64501",
+            "color": "white",
+            "number": 5,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#feb236",
+            "color": "white",
+            "number": 6,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#6b5b95",
+            "color": "white",
+            "number": 7,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#405d27",
+            "color": "white",
+            "number": 8,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#f7786b",
+            "color": "white",
+            "number": 9,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        },
+        {
+            "backgroundColor": "#80ced6",
+            "color": "white",
+            "number": 10,
+            "checked": false,
+            "fontFamily": "Red Hat Mono",
+            "fontSize": "50px"
+        }
+    ]
+}

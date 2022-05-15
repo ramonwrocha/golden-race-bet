@@ -1,0 +1,32 @@
+<!-- <div *ngFor="let ball of balls">
+    <app-ball [ball]="ball"></app-ball>
+</div> -->
+
+
+<!-- <div fxFlexLayout="row">
+    <div>
+        <app-selection-balls></app-selection-balls>
+    </div>
+    <div>
+        <app-bet></app-bet>
+    </div>
+</div> -->
+
+ <mat-card-content>
+
+    <div fxLayout="column" style="height: 100%;">
+
+      <div fxLayout="row" class="layout-row">
+
+        <div fxFlex="70" fxFlexOffset="5">
+            <app-selection-balls [balls]="balls"></app-selection-balls>
+        </div>
+
+        <div fxFlex="30" fxFlexOffset="5">
+            <app-bet (betEvent)="getResult($event)"></app-bet>
+        </div>
+
+      </div>
+
+    </div>
+</mat-card-content>

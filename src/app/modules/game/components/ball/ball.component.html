@@ -1,0 +1,10 @@
+ <div class="ball ball-effect" 
+    [style.background]="ball.backgroundColor" 
+    [style.width]="width" 
+    [style.height]="height" 
+    [ngClass]="{'selected': ball.checked && showChecked}">
+     <span 
+        [style.fontSize]="fontSize"
+        [style.fontFamily]="fontFamily"
+        [style.color]="ball.color">{{ball.number}}</span>
+ </div>

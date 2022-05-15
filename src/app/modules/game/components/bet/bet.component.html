@@ -1,0 +1,40 @@
+<div fxLayout="column" fxFlexFill class="bet">
+
+    <!-- Header -->
+    <div fxLayout="row" fxFlex="25" fxLayoutAlign="center center">
+        <div fxFlex="20" fxFlex.sm="33.3" fxFlex.xs="50" style="margin: 1px;" *ngFor="let ball of selectedBalls">
+            <app-ball (click)="onClickBall(ball)"width="40px" height="40px" fontSize="16px" [ball]="ball" [showChecked]="false"></app-ball>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div fxLayout="row" fxFlex="35" style="margin: 5%" fxLayoutAlign="center center">
+
+        <form [formGroup]="form" fxLayoutAlign="center center" fxFlexFill>
+
+            <div style="margin-right: 5%">
+                {{ selectedBalls.length }}x
+            </div>
+
+            <mat-form-field fxFlex="70">
+                <input type="number" matInput placeholder="Bet amount" [min]="5" formControlName="value" required>
+                <mat-error *ngIf="form.controls['value'].hasError('min')">
+                    Minimum bet is 5 €
+                </mat-error>
+            </mat-form-field>
+          
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <div fxLayout="column" class="footer" fxFlex fxLayoutAlign="center center">
+        <div fxFlex fxLayoutAlign="center center" style="width: 100%;">
+            Total: {{ form.controls['value'].value * selectedBalls.length }}$
+        </div>
+        <div fxFlex fxLayout="row" fxLayoutAlign="center center" style="width: 100%;">
+            <button mat-raised-button color="primary" (click)="placeBet()" [disabled]="!form.valid || !selectedBalls.length">Place bet</button>
+        </div>
+    </div> 
+    
+</div>

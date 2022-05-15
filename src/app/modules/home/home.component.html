@@ -1,0 +1,19 @@
+<mat-card class="card">
+
+    <mat-card-title>Modules</mat-card-title>
+
+    <mat-card-subtitle>
+        Games<br />
+    </mat-card-subtitle>
+
+    <mat-card-content>
+        <div fxLayout="row wrap">
+            <div fxFlex="20" fxFlex.sm="33.3" fxFlex.xs="50" style="padding: 1%;" *ngFor="let item of modules">
+                <mat-grid-list (click)="redirectModule(item)" class="card-module" cols="1" rowHeight="1:1" [style.background]="item.backgroundColor">
+                    <mat-grid-tile>{{ item.title }}</mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </div>
+    </mat-card-content>
+
+</mat-card>
