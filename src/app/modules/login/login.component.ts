@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/core/services/auth/auth.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/core/services/auth/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   private formSubmitAttempt!: boolean;
 
@@ -20,9 +20,6 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private authService: AuthService
   ) { }
-
-  ngOnInit(): void {
-  }
 
   isFieldInvalid(field: string): boolean {
 

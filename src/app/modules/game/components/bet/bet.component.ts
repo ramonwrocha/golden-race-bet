@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { BallModel } from 'src/app/core/models/ball.model';
 import { BetModel } from 'src/app/core/models/bet.model';
@@ -11,7 +11,7 @@ import { GameService } from './../../services/game.service';
   styleUrls: ['./bet.component.scss']
 })
 
-export class BetComponent implements OnInit {
+export class BetComponent implements OnInit, OnDestroy {
 
   selectedBalls: BallModel[] = [];
 
